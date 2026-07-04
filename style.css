@@ -1,0 +1,311 @@
+/* ==========================
+   FONT
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    padding:15px 0;
+    transition:.3s;
+    background:#fff;
+}
+
+.navbar-brand{
+    font-size:26px;
+    font-weight:700;
+}
+
+.nav-link{
+    font-weight:500;
+    margin-left:18px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#198754 !important;
+}
+
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    padding:120px 0;
+}
+
+.hero .container{
+    max-width:1140px;
+    width:100%;
+    margin:auto;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    background-image:url("images/hasan1.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center top;
+    z-index:-2;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    z-index:-1;
+}
+
+.hero h1{
+    color:#198754;
+    text-shadow:2px 2px 8px rgba(0,0,0,.7);
+}
+
+.hero p,
+.hero .col-6{
+    color:#fff;
+    text-shadow:1px 1px 6px rgba(0,0,0,.6);
+}
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn-success,
+.btn-outline-success{
+    border-radius:50px;
+    padding:14px 28px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-success:hover,
+.btn-outline-success:hover{
+    transform:translateY(-2px);
+}
+
+
+/* ==========================
+   STATISTIK
+========================== */
+
+.bg-dark{
+    background:#1f1f1f !important;
+}
+
+.bg-dark h2{
+    color:#ffc107;
+    font-weight:700;
+    min-height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+.bg-dark p{
+    color:#fff;
+    margin-bottom:0;
+    font-size:16px;
+}
+
+.bg-dark i{
+    font-size:42px;
+}
+
+
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .35s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    background: #fff;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+.card-img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.05);
+}
+
+.price-badge{
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    background: rgba(255,255,255,.95);
+    color: #4b3b52;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+/* ==========================
+   SECTION TITLE
+========================== */
+
+section h2{
+    color:#198754;
+    font-size:40px;
+    font-weight:700;
+}
+
+
+/* ==========================
+   GALERI
+========================== */
+
+#galeri img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+}
+
+#galeri img:hover{
+    transform:scale(1.05);
+}
+
+
+/* ==========================
+   MAP
+========================== */
+
+iframe{
+    border-radius:20px;
+}
+
+
+/* ==========================
+   KONTAK
+========================== */
+
+#kontak{
+    background:#198754;
+}
+
+#kontak h2,
+#kontak p{
+    color:#fff;
+}
+
+#kontak a{
+    text-decoration:none;
+}
+
+#kontak i{
+    transition:.3s;
+}
+
+#kontak i:hover{
+    transform:scale(1.2);
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:20px;
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    padding-top:120px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero img{
+    margin-top:30px;
+}
+
+.nav-link{
+    margin-left:0;
+}
+
+.bg-dark .col-md-3{
+    margin-bottom:25px;
+}
+
+}
